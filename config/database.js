@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   development: {
-    url: 'postgres://dev_user:dev_pass_123@preprod.internal.mutevazipeynircilik:5432/muto',
+    url: 'postgres://process.env.devuser:process.env.devpass@preprod.internal.mutevazipeynircilik:5432/muto',
     dialect: 'postgres'
   }
 };
