@@ -1,7 +1,8 @@
-//Property of Mütevazi Peynircilik (mutevazipeynircilik.com)
+// Notice:
+// Property of Mütevazi Peynircilik (mutevazipeynircilik.com)
 const jwt = require('jsonwebtoken');
-
-const jsc = '';
+const { JSC } = process.env;
+const jsc = JSC;
 
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
