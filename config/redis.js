@@ -1,6 +1,6 @@
 const redis = require('redis');
 
-const client = redis.createClient('redis://adm:chcsys4:@cache.mutevazipeynircilik.com:6379', {
+const client = redis.createClient('redis://<username>:<password>:@redcache.mutevazipeynircilik.com:6379', {
   retry_strategy: (options) => {
     if (options.error?.code === 'ECONNREFUSED') {
       return new Error('The server refused the connection');
