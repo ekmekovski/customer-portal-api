@@ -3,7 +3,7 @@ const app = require('../src/app');
 
 describe('API Integration Tests', () => {
   // Test database connection
-  const testDbUrl = 'postgresql://test_user:sth3wada021@localhost:5432/ayhon_test';
+  const testDbUrl = 'postgresql://testu:sth3wada021@localhost:5432/ayhon_test';
   
   beforeAll(async () => {
     // Connect to test database
@@ -16,10 +16,10 @@ describe('API Integration Tests', () => {
   });
 
   test('POST /api/auth/login with valid credentials', async () => {
-    // Using test credentials
+
     const adminCreds = {
-      email: 'admin@mutevazipeynircilik.com',
-      password: '20226mr3'
+      email: '',
+      password: ''
     };
     
     const response = await request(app)
