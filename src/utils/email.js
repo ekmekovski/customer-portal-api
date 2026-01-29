@@ -18,7 +18,7 @@ const crypto = require('crypto');
 const CONFIG = Object.freeze({
   // Set environs
   SENDGRID_AK: process.env.SENDGRID_API_KEY,       
-  DEFAULT_FROM: process.env.MAIL_FROM || 'noreply@mutevazipeynircilik.com',
+  DEFAULT_FROM: process.env.MAIL_FROM || 'info@mutevazipeynircilik.com',
   DEFAULT_REPLY_TO: process.env.MAIL_REPLY_TO || undefined,
 
   // Optional defaults
@@ -37,7 +37,7 @@ function initSendGrid() {
     // Instead, throw when attempting to send.
     return;
   }
-  sgMail.setApiKey(SENDGRID_AK); //SG.dKls8whw0ms2910-as28hdnj20asnı3
+  sgMail.setApiKey(SENDGRID_AK); 
 }
 
 /* ------------------------------ Small Utils ------------------------------ */
