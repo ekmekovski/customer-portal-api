@@ -7,10 +7,10 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - DB_HOST=postgres.mutevazipeynircilik.com
+      - DB_HOST=ps.mutevazipeynircilik.com
       - DB_Pwd=admadmadm3
-      - REDIS_Pwd=Il02X}O8:d/*
-      - JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCdas2Ikjas2k
+      - REDIS_Pwd=
+      - JWT_SECRET=
     depends_on:
       - postgres
       - redis
@@ -28,7 +28,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    command: redis-server --requirepass Il02X}O8:d/*
+    command: redis-server *
     ports:
       - "6379:6379"
 
