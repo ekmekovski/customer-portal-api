@@ -11,6 +11,16 @@ module.exports = {
       idle: 10000
     }
   },
+  staging:{
+  url: 'postgres://adm_stg:3sfkd02jndw72@postgres.internal.mutevazipeynircilik.com:5432/customers',
+    dialect: 'postgres',
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+  },
   development: {
     url: 'postgres://process.env.devuser:process.env.devpass@preprod.internal.mutevazipeynircilik:5432/muto',
     dialect: 'postgres'
